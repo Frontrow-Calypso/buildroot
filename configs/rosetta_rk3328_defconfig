@@ -1,0 +1,26 @@
+#include "rk3328_arm64.config"
+#include "base.config"
+#include "base_extra.config"
+#include "gpu.config"
+#include "display.config"
+#include "audio.config"
+#include "test.config"
+#include "debug.config"
+#include "benchmark.config"
+BR2_TARGET_GENERIC_HOSTNAME="rosetta-rk3328"
+BR2_TARGET_GENERIC_ISSUE="Welcome to Rosetta RK3328"
+BR2_TARGET_GENERIC_ROOT_PASSWD="rosetta"
+BR2_TARGET_TZ_INFO=y
+# BR2_PACKAGE_ROCKCHIP is not set
+BR2_PACKAGE_SOX=y
+BR2_PACKAGE_BZIP2=y
+BR2_PACKAGE_GZIP=y
+BR2_PACKAGE_ZIP=y
+BR2_PACKAGE_CPIO=y
+BR2_PACKAGE_MMC_UTILS=y
+BR2_PACKAGE_MTOOLS=y
+BR2_PACKAGE_DBUS=y
+BR2_PACKAGE_SBC=y
+BR2_PACKAGE_PCRE2=y
+BR2_PACKAGE_PCRE2_16=y
+BR2_PACKAGE_BASH=y
